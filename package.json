@@ -1,0 +1,29 @@
+{
+  "name": "fitbit",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.2",
+    "@fitbit/sdk-cli": "^1.6.3"
+  },
+  "fitbit": {
+    "appUUID": "e78aa8bf-0e3e-4be0-aaaf-dcd868a314a6",
+    "appType": "app",
+    "appDisplayName": "Fitbit",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  }
+}
