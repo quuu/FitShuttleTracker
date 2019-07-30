@@ -1,6 +1,17 @@
-let document = require("document")
+import document from "document";
+import * as messaging from "messaging";
 import { Accelerometer } from "accelerometer";
 
+
+// listen for an onopen connection
+messaging.peerSocket.onopen = function(evt) {
+
+  const shuttle = document.getElementById("json")
+  shuttle.text = JSON.stringify(evt.data)
+
+
+
+}
 if (Accelerometer) {
   // sampling at 1Hz (once per second)
   const accel = new Accelerometer({ frequency: 1 });
