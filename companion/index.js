@@ -5,6 +5,26 @@ import { settingsStorage} from "settings";
 
 
 
+messaging.peerSocket.onopen = function(){
+
+
+  sendMessage();
+}
+
+function sendMessage(){
+
+  var data = {
+    test: "yes"
+  }
+
+  if(messaging.peerSocket.readyState == messaging.peerSocket.OPEN){
+
+
+    message.peerSocket.send(data);
+  }
+
+}
+
 
 console.log('Hello world!');
 /*
