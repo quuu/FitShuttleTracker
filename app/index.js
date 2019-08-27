@@ -7,11 +7,19 @@ import { Accelerometer } from "accelerometer";
 messaging.peerSocket.onopen = function(evt) {
 
   const shuttle = document.getElementById("json")
-  shuttle.text = JSON.stringify(evt.data)
+  //shuttle.text = JSON.stringify(evt.data)
 
 
-
+  console.log("the socket is open");
+  console.log(messaging.peerSocket.MAX_MESSAGE_SIZE);
 }
+
+
+
+
+
+// accelerometer code used for later
+  /*
 if (Accelerometer) {
   // sampling at 1Hz (once per second)
   const accel = new Accelerometer({ frequency: 1 });
@@ -37,3 +45,6 @@ if (Accelerometer) {
   });
   accel.start();
 }
+
+
+  */

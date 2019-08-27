@@ -20,7 +20,7 @@ function sendMessage(){
   if(messaging.peerSocket.readyState == messaging.peerSocket.OPEN){
 
 
-    message.peerSocket.send(data);
+    messaging.peerSocket.send(data);
   }
 
 }

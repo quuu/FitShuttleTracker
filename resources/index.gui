@@ -1,8 +1,26 @@
 <svg class="background">
-  <text id="x" x="10%" y="33%">X coordinate!</text>
-  <text id="y" x="10%" y="50%">Y coordinate!</text>
-  <text id="z" x="10%" y="66%">Z coordinate!</text>
+  <!--<text id="x" x="10%" y="33%">X coordinate!</text>-->
+  <!--<text id="y" x="10%" y="50%">Y coordinate!</text>-->
+  <!--<text id="z" x="10%" y="66%">Z coordinate!</text>-->
 
-  <text id="json" x="10%" y="80%">Shuttle Information</text>
+  <text id="json" x="10%" y="33%">Shuttle Information</text>
+    <!-- Define a reusable tile to display a train -->
+  <symbol id="tile-train" focusable="false" pointer-events="visible"
+  system-events="all">
+    <rect id="train-background" height="100%" />
+
+    <!-- line1: destination of the train -->
+    <text id="destination" font-size="40" x="5" y="40" fill="white">Name</text>
+
+    <!-- line 2: time in minutes, platform and bike or no bike icon -->
+    <text id="minutes"  x="5"   y="78" font-size="30" fill="white">42 minutes</text>
+    <text id="platform" x="100%-120" y="78" font-size="30" fill="grey">X</text>
+
+
+    <rect id="tile-divider-bottom" height="2" />
+  </symbol>
+
+  <textarea id="status" class="status">status message to be displayed
+  here</textarea>
 </svg>
 
